@@ -2,7 +2,6 @@
 rm(list=ls())
 library(googlesheets)
 library(ggplot2)
-setwd("C:/Users/Shubham Srivastava/Documents/OYO/Escalations")
 gs_auth()
 key <- gs_url("https://docs.google.com/spreadsheets/d/1Hepp_Vw-INH3nDzrCbp8Dz9G-wTFTlyNae8FYcGNMR4/edit?ts=5d0b11b4#gid=0")
 rnm <- gs_read(key, ws = "raw",range = "A1:L5250",col_names =  TRUE)
